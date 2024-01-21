@@ -14,3 +14,9 @@
     font-size: 18px;
     font-weight: 700;
 }
+
+@media screen and (min-width: 769px) {
+    .content-logo span {
+        font-size: 32px;
+    }
+}

@@ -3,3 +3,9 @@
     font-size: 20px;
     font-weight: 800;
 }
+
+@media screen and (min-width: 769px) {
+    .main-title{
+        font-size: 32px;
+    }
+}

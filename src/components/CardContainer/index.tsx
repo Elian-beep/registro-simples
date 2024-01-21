@@ -1,6 +1,6 @@
 import React from 'react';
 import './style.css';
-import IChildren from '../../interfaces/IChildren';
+import IChildren from 'interfaces/IChildren';
 
 export const CardContainer: React.FC<IChildren> = ({children}) => {
   return (
