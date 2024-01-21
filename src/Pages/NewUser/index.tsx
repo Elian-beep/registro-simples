@@ -1,14 +1,12 @@
 import React from 'react';
 import './style.css';
 
-export const  = () => {
+export const NewUser = () => {
   return (
     <>
+    novo registro
     </>
   );
 }
 
-export default ;
-
-@media screen and (min-width: 769px) {
-}
+export default NewUser;
