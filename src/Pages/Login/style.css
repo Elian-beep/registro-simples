@@ -1,0 +1,26 @@
+.form-login {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.link-new-user {
+    display: flex;
+    justify-content: center;
+    color: var(--color-black);
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.link-new-user button {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    margin-left: 1px;
+
+    color: var(--color-primary);
+    font-size: 10px;
+    font-weight: 600;
+    text-decoration-line: underline;
+}

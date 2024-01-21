@@ -1,0 +1,10 @@
+.button-primary {
+    border-radius: 5px;
+    background: var(--color-primary);
+    width: 100%;
+    padding: 16px 0;
+
+    color: var(--color-white);
+    font-size: 16px;
+    font-weight: 700;
+}

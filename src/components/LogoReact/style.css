@@ -1,0 +1,16 @@
+.content-logo {
+    background: var(--color-primary);
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+    gap: 16px;
+}
+
+.content-logo span {
+    color: var(--color-white);
+    font-size: 18px;
+    font-weight: 700;
+}
