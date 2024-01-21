@@ -25,6 +25,7 @@ export const Login = () => {
         event.preventDefault();
         console.log(`Verificar login com os dados: ${formValues.password} | ${formValues.username}`);
         setFormValues({ password: '', username: '' });
+        navigate('/newperson');
     }
 
     return (
@@ -34,7 +35,7 @@ export const Login = () => {
                 <LogoReact />
                 <form className='form-login' onSubmit={handleSubmit}>
                     <InputDefault
-                        type="text"
+                        type="email"
                         placeholder="email@email.com"
                         title="E-mail"
                         onChange={handleInputChange}

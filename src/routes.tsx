@@ -1,7 +1,9 @@
 import { BrowserRouter, Route, Router, Routes } from "react-router-dom"
+import React from "react"
+
 import Login from "Pages/Login"
 import NewUser from "Pages/NewUser"
-import React from "react"
+import NewPerson from "Pages/NewPerson"
 
 export const AppRouter = () => {
 
@@ -11,6 +13,7 @@ export const AppRouter = () => {
                 <Routes>
                     <Route path="/" element={<Login />} />
                     <Route path='/newuser' element={<NewUser />} />
+                    <Route path='/newperson' element={<NewPerson />} />
                 </Routes>
             </BrowserRouter>
         </React.StrictMode>

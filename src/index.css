@@ -1,6 +1,6 @@
 :root{
   --color-primary: #0E5651;
-  --color-secundary: #E4E4E4;
+  --color-secondary: #E4E4E4;
   --color-danger: #7F2E0B;
   --color-black: #0C0C0C;
   --color-white: #FFFFFF;
@@ -10,7 +10,7 @@
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  background: var(--color-secundary);
+  background: var(--color-secondary);
   z-index: 9;
 }
 
