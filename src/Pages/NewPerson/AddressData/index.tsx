@@ -40,11 +40,15 @@ export const AddressData: React.FC<Props> = ({ onAddressSubmit }) => {
 
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
-    if (formAddress.cep) {
+    if(formListAddress.length == 0 && !formAddress.cep){
+      if(formAddress.cep == 0){
+        alert('O campo CEP deve ser preenchido');
+      }
+    }else{
       handleAddAddress();
+      setIsVisible(false);
+      onAddressSubmit(formListAddress, isVisible);
     }
-    setIsVisible(false);
-    onAddressSubmit(formListAddress, isVisible);
   }
 
   const handleAddAddress = () => {
@@ -77,7 +81,7 @@ export const AddressData: React.FC<Props> = ({ onAddressSubmit }) => {
               <Divisionform>
                 <InputDefault name='place' onChange={handleInputChange} placeholder='Rua Sem Nome' title='Logradouro' type='text' value={formAddress.place} />
                 <InputDefault name='number' onChange={handleInputChange} placeholder='9999' title='Número' type='number' value={formAddress.number.toString()} />
-                <InputDefault name='cep' onChange={handleInputChange} placeholder='99999-99' title='CEP' type='number' value={formAddress.cep.toString()} />
+                <InputDefault name='cep' onChange={handleInputChange} placeholder='99999-99' title='CEP' type='number' value={formAddress.cep.toString()} required />
               </Divisionform>
               <Divisionform>
                 <InputDefault name='complement' onChange={handleInputChange} placeholder='Casa 999' title='Complemento' type='text' value={formAddress.complement} />

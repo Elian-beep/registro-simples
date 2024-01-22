@@ -40,7 +40,17 @@ export const ContactData: React.FC<Props> = ({ onContactSubmit }) => {
 
     const handleSubmit = (event: React.FormEvent) => {
         event.preventDefault();
-        onContactSubmit(formListContact, isVisible);
+        if(formListContact.length == 0){
+            if(!formContact.name){
+                alert('O campo Nome deve ser preenchido');
+            }
+            else if(!formContact.contact){
+                alert('O campo Contato deve ser preenchido');
+            }
+        }
+        else{
+            onContactSubmit(formListContact, isVisible);
+        }
     }
 
     const handleAddContact = () => {

@@ -10,6 +10,7 @@ interface InputProps {
     name: string;
     onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
     value: string;
+    required?: boolean;
     isSensitive?: boolean;
 }
 
@@ -18,7 +19,7 @@ export const InputDefault: React.FC<InputProps> = ({ onChange, placeholder, titl
 
     const togglePasswordVisibility = () => {
         setIsPasswordVisible(!isPasswordVisible);
-      };
+    };
 
     return (
         <div className='container-input'>
