@@ -9,3 +9,7 @@
     font-weight: 700;
     cursor: pointer;
 }
+
+.button-primary.danger{
+    background: var(--color-danger);
+}

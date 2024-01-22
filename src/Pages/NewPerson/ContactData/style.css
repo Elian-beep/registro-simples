@@ -1,0 +1,10 @@
+.form-contact-data{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;  
+}
+
+.form-group-buttons{
+    display: flex;
+    gap: 8px;
+}

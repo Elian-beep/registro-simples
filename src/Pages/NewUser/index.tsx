@@ -41,6 +41,7 @@ export const NewUser = () => {
 
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
+    navigate('/newperson');
   }
 
   return (
@@ -56,7 +57,7 @@ export const NewUser = () => {
             <InputDefault
               name='username'
               onChange={handleInputChange}
-              placeholder=''
+              placeholder='username'
               title='Username'
               type='text'
               value={formValues.username}

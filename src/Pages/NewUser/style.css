@@ -44,11 +44,11 @@
     }
 
     .area-upload span{
-        font-size: 16px;
+        font-size: 12px;
     }
 
     .form-new-user .group-form{
-        width: 300px;
+        width: 370px;
         flex-direction: row;
         justify-content: space-between;
     }

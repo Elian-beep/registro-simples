@@ -25,7 +25,7 @@ export const Login = () => {
         event.preventDefault();
         console.log(`Verificar login com os dados: ${formValues.password} | ${formValues.username}`);
         setFormValues({ password: '', username: '' });
-        navigate('/newperson');
+        navigate('/home');
     }
 
     return (

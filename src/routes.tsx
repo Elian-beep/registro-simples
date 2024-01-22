@@ -3,6 +3,7 @@ import React from "react"
 
 import Login from "Pages/Login"
 import NewUser from "Pages/NewUser"
+import Home from "Pages/Home";
 import NewPerson from "Pages/NewPerson"
 
 export const AppRouter = () => {
@@ -13,6 +14,7 @@ export const AppRouter = () => {
                 <Routes>
                     <Route path="/" element={<Login />} />
                     <Route path='/newuser' element={<NewUser />} />
+                    <Route path="/home" element={<Home />} />
                     <Route path='/newperson' element={<NewPerson />} />
                 </Routes>
             </BrowserRouter>

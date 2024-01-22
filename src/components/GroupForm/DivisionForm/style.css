@@ -1,0 +1,12 @@
+.content-division-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+@media screen and (min-width: 769px) {
+    .content-division-form{
+        flex-direction: row;
+        gap: 36px;
+    }
+}

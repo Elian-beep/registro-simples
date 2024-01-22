@@ -1,0 +1,75 @@
+.container-timeline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.content-02 {
+    visibility: hidden;
+}
+
+.content-03 {
+    visibility: hidden;
+}
+
+.content-01, .content-02, .content-03{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.content-02{
+    align-items: center;
+}
+
+.content-03{
+    align-items: flex-end;
+}
+
+.title-01,
+.title-02,
+.title-03 {
+    color: var(--color-primary);
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.ellipse-01, .ellipse-default, .ellipse-default{
+    width: 8px;
+    height: 8px;
+    background: var(--color-primary);
+    border-radius: 50%;
+}
+
+.line {
+    position: absolute;
+    top: 85%;
+    left: 0%;
+    width: 0;
+    height: 1px;
+    background: var(--color-primary);
+}
+
+/* SEGUNDO BLOCO BLOCO APENAS */
+
+.content-02.show {
+    visibility: visible;
+}
+
+.line.one{
+    width: 58%;
+}
+
+
+/* TERCEIRO BLOCO BLOCO APENAS */
+
+.content-03.show {
+    visibility: visible;
+}
+
+.line.two{
+    width: 100%;
+}
